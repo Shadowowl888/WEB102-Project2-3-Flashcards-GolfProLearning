@@ -1,0 +1,157 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-set-title{
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 8px;
+  color: beige;
+}
+
+.card-set-description{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  /* padding: 0px 0px 2rem; */
+  color: beige;
+}
+
+.card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card{
+  box-shadow: 2px 4px 15px #0000000a;
+  position: relative;
+  top: 0px;
+  left: 0px;
+   
+  width: 500px;
+  height: 300px;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: top;
+
+  padding: 2rem 2.5rem;
+
+  border-radius: 20px;
+  background: rgb(231,240,255);
+  background: linear-gradient(120deg, rgba(108, 201, 175, 0.657) 0%, rgba(88, 152, 217, 0.486) 100%);
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.showFlip {
+  /* transition: transform 0.8s; */
+  transform: rotateY(180deg);
+}
+
+.card-hide {
+  display: none;
+}
+
+.card-side {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #3a1a4b;
+  justify-self: left;
+  text-align: left;
+  padding: 1rem 0px;
+  margin-bottom: 1em;
+}
+
+.card-content {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem 0px;
+  color: #000000;
+}
+
+.card-corner {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #3a1a4b;
+  justify-self: right;
+  text-align: right;
+  padding: 1rem 0px;
+  margin-bottom: 1em;
+}
+
+#card-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-navbutton{
+  background-color: rgb(208, 233, 254);
+  color: black;
+}
+
+#card-count {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  text-align: center;
+  color: beige;
+  margin: 1rem 0px;
+  padding: 0% 1rem;
+}
+
+.button-inactive{
+  background-color: gray;
+}
+
+.button-inactive:hover{
+  transition: none;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+.button-inactive:focus{
+  transition: none;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+  }
