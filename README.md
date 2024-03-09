@@ -20,12 +20,12 @@ The following **optional** features are implemented:
 
 - [ ] Cards contains images in addition to or in place of text
 - [x] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
+  - [x] Very clean and organized
 
 The following **additional** features are implemented:
 
 * [x] Shuffle button to randomize the order of the cards
-* [x] Forward and back buttons to move through the different cards
+* [x] Previous and next buttons to move through the different cards
 * [ ] Text input box for the user to enter an answer
 
 ## Video Walkthrough
@@ -43,7 +43,7 @@ GIF created with [LICEcap](https://www.cockos.com/licecap/)
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Some challenges I encountered was the flipping part of the card and figuring out how to display the question and answer component separately. I then found that creating a boolean state to keep track of whether to display the answer was the best approach. Based on the boolean state, it would either hide the question component or answer component of the card.
 
 ## License
 
