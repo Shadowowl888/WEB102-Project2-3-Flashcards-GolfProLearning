@@ -154,4 +154,31 @@
   transition: none;
   border: 1px solid transparent;
   cursor: not-allowed;
-  }
+}
+
+.answer-title {
+  width: 100%;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 100%;
+  color: beige;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0px;
+  margin-top: 5px;
+}
+
+.answer-box {
+  border-radius: 20px;
+  padding: 1rem 1rem;
+}
+
+.check-answer-button {
+  color: black;
+  border-radius: 20px;
+  background-color: rgb(208, 233, 254);
+  margin-left: 2rem;
+  padding: 1rem 1rem;
+}
